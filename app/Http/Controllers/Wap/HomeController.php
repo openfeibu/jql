@@ -18,7 +18,7 @@ class HomeController extends BaseHomeController
     }
     public function home(Request $request)
     {
-        $banners = app(Banner::class)->getBannersBySlug('banner_pc');
+        $banners = app(Banner::class)->getBannersBySlug('banner_wap');
         return $this->response->title(trans('app.home'))
             ->data(compact('banners'))
             ->view('home', true)
