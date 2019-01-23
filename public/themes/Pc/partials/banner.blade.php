@@ -1,0 +1,1 @@
+<div class="banner"><img src="{!! $banner !!}" alt="" width="100%"></div>
