@@ -85,6 +85,7 @@ Route::group([
     });
 
     Route::resource('message', 'MessageResourceController');
+    Route::post('/message/destroyAll', 'MessageResourceController@destroyAll')->name('message.destroy_all');
 
     Route::group(['prefix' => 'page','as' => 'page.','namespace' => 'Page'], function ($router) {
         Route::resource('page', 'PageResourceController');
