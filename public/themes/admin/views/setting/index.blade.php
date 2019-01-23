@@ -33,7 +33,12 @@
                             <input type="text" name="copyright" lay-verify="copyright" autocomplete="off" placeholder="请输入版权声明" class="layui-input" value="{{$setting['copyright']}}">
                         </div>
                     </div>
-
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">简历模板下载链接</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="resume_url" lay-verify="email" autocomplete="off" placeholder="请输入邮箱" class="layui-input" value="{{$setting['resume_url']}}">
+                        </div>
+                    </div>
 
                     <div class="layui-form-item">
                         <div class="layui-input-block">
