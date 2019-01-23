@@ -7,7 +7,7 @@
             <span>JOBS AND CAREERS AT JIAQILE</span>
         </div>
         <div class="join-btn">
-            <a href="#">招聘简历范本下载</a>
+            <a href="{{ setting('resume_url') }}">招聘简历范本下载</a>
             <p>下载表格后，请按范本填写简历，电邮至 <span>hr@jiaqile.cn </span>  我们将尽快回复。</p>
         </div>
         <div class="jion-con">
