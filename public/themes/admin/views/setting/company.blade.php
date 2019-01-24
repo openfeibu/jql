@@ -89,7 +89,8 @@
         </div>
     </div>
 </div>
-<script charset="utf-8" src="https://map.qq.com/api/js?v=2.exp"></script>
+<script charset="utf-8" src="https://map.qq.com/api/js?v=2.exp&key=YVHBZ-LNORJ-N2WFY-FDDOG-YZQRK-XOFQ2"></script>
+
 <script>
     window.onload = function(){
         init();
@@ -98,7 +99,7 @@
 <script>
     var searchService,map,markers = [];
     var init = function() {
-        var center = new qq.maps.LatLng(23.15641,113.3318);
+        var center = new qq.maps.LatLng('{{$company['latitude']}}','{{$company['longitude']}}');
         map = new qq.maps.Map(document.getElementById('map'),{
             center: center,
             zoom: 13
@@ -159,7 +160,7 @@
     //调用poi类信接口
     function searchKeyword() {
         var keyword = document.getElementById("keyword").value;
-        region = new qq.maps.LatLng(39.936273,116.44004334);
+        region = new qq.maps.LatLng('{{$company['latitude']}}','{{$company['longitude']}}');
         clearOverlays(markers);
         // searchService.setPageCapacity(5);
         searchService.search(keyword);//根据中心点坐标、半径和关键字进行周边检索。
