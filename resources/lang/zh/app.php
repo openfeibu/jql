@@ -95,4 +95,16 @@ return [
     'flash.warning'  => '警告',
     'flash.info'     => '信息',
 
+    'success'       => [
+        'created' => '已成功添加。',
+        'updated' => '已成功更新。',
+        'deleted' => '已成功删除。',
+        'changed' => '已被 :status。',
+    ],
+
+    'error'         => [
+        'create' => '无法创建 。',
+        'update' => '无法更新 。',
+        'delete' => '无法删除 。',
+    ],
 ];

@@ -98,6 +98,14 @@ Route::group([
         Route::get('/about_image/show', 'AboutImageResourceController@show')->name('about_image.show');
         Route::post('/about_image/store', 'AboutImageResourceController@store')->name('about_image.store');
         Route::put('/about_image/update/{page}', 'AboutImageResourceController@update')->name('about_image.update');
+
+        Route::get('/service_pc/show', 'ServicePcResourceController@show')->name('service_pc.show');
+        Route::post('/service_pc/store', 'ServicePcResourceController@store')->name('service_pc.store');
+        Route::put('/service_pc/update/{page}', 'ServicePcResourceController@update')->name('service_pc.update');
+
+        Route::get('/service_wap/show', 'ServiceWapResourceController@show')->name('service_wap.show');
+        Route::post('/service_wap/store', 'ServiceWapResourceController@store')->name('service_wap.store');
+        Route::put('/service_wap/update/{page}', 'ServiceWapResourceController@update')->name('service_wap.update');
     });
 
     Route::get('about_company','PageResourceController@getAboutCompany')->name('about_company');

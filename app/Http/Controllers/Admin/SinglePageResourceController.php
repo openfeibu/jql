@@ -30,7 +30,7 @@ class SinglePageResourceController extends BaseController
             $attributes['category_id'] = $this->category_id;
             $page = $this->repository->create($attributes);
 
-            return $this->response->message(trans('messages.success.created', ['Module' => $this->title]))
+            return $this->response->message(trans('app.success.created'))
                 ->code(204)
                 ->status('success')
                 ->url($this->url)
@@ -63,7 +63,7 @@ class SinglePageResourceController extends BaseController
             $attributes = $request->all();
 
             $page->update($attributes);
-            return $this->response->message(trans('messages.success.updated', ['Module' => $this->title]))
+            return $this->response->message(trans('app.success.updated'))
                 ->code(204)
                 ->status('success')
                 ->url($this->url)
