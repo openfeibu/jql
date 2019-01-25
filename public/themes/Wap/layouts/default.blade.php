@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
+    <meta name="format-detection" content="telephone=no" />
     <title>
         {{ setting('station_name') }} {!! Theme::getTitle() !!}
     </title>

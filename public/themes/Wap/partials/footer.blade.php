@@ -1,6 +1,6 @@
 <div class="footer">
     <div class="footer-b">
-        <div class="f-logo"><img src="{!! theme_asset('images/flogo.jpg') !!}" alt=""></div>
+        <div class="f-logo"><img src="{!! theme_asset('images/flogo.png') !!}" alt=""></div>
         <div class="info">
             <p>{{ setting('company_name') }}</p>
             <p> {{ setting('address') }}</p>

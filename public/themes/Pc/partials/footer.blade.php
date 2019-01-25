@@ -1,7 +1,7 @@
 <div class="footer">
     <div class="w1200 fb-clearfix">
         <div class="f-left">
-            <div class="flogo"><img src="{!! theme_asset('images/flogo.jpg') !!}" alt=""></div>
+            <div class="flogo"><img src="{!! theme_asset('images/flogo.png') !!}" alt=""></div>
             <p>{{ setting('company_name') }}</p>
             <span> {{ setting('company_name_en') }}</span>
         </div>
