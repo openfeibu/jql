@@ -1,4 +1,5 @@
 function getUe() {
+
 	return ue = UE.getEditor('content',{
 		  toolbars: [
 		      [
@@ -76,6 +77,7 @@ function getUe() {
 		});
 	// body...
 }
+
 function getUeCopy(id) {
 	return ue_copy = UE.getEditor(id,{
 		toolbars: [
@@ -153,6 +155,17 @@ function getUeCopy(id) {
 
 	});
 	// body...
+
+}
+function getContent(id) {
+	if(!id)
+	{
+		id = 'content';
+	}
+	if(UE.getEditor(id).queryCommandState('source')!=0)
+	{
+		UE.getEditor(id).execCommand('source');
+	}
 }
 /* ========================================================================
  * Bootstrap: alert.js v3.1.0
