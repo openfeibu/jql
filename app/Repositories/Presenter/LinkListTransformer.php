@@ -12,7 +12,7 @@ class LinkListTransformer extends TransformerAbstract
             'id' => $link->id,
             'name' => $link->name,
             'order' => $link->order,
-            'image' => $link->image ? url("/image/sm".$link->image) : '',
+            'image' => $link->image ? url("/image/original".$link->image) : '',
         ];
     }
 }

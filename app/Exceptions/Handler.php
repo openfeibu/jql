@@ -2,7 +2,7 @@
 
 namespace App\Exceptions;
 
-use Exception;
+use Exception,Redirect;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 
 class Handler extends ExceptionHandler
@@ -62,6 +62,18 @@ class Handler extends ExceptionHandler
                     'code' => 403,
                     'url' => '',
                     'message' => $exception->getMessage(),
+                ];
+                break;
+            case ($exception instanceof \Illuminate\Session\TokenMismatchException):
+//                return Redirect::back()
+//                    ->withErrors(['页面Token 失效，请重新进入'])
+//                    ->withMessage('页面Token 失效，请重新进入')
+//                    ->withStatus('error')
+//                    ->withCode('403');
+                $resposeJson = [
+                    'code' => 403,
+                    'url' => '',
+                    'message' => '页面Token 失效，请重新进入',
                 ];
                 break;
             default:
