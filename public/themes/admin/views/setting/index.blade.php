@@ -36,7 +36,7 @@
                     <div class="layui-form-item">
                         <label class="layui-form-label">简历模板下载链接</label>
                         <div class="layui-input-inline">
-                            <input type="text" name="resume_url" lay-verify="email" autocomplete="off" placeholder="请输入邮箱" class="layui-input" value="{{$setting['resume_url']}}">
+                            <input type="text" name="resume_url" lay-verify="email" autocomplete="off" placeholder="请输入链接" class="layui-input" value="{{$setting['resume_url']}}">
                         </div>
                     </div>
 
